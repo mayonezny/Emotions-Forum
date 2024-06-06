@@ -1,0 +1,69 @@
+
+.postsblock-outerbox{
+    background-color: #555555;
+    border-radius: 20px; 
+    padding: 1%;
+    min-width: 50vw;
+    width: 70vw;
+    align-self: center;
+    margin-top: 2.5svh;
+    min-height: 10vh;
+  }
+.username-and-date-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(219, 219, 219);
+    border-bottom: 2px solid white;
+    
+    
+}
+
+.username-span{
+    font-weight: 600;
+    font-size: 20pt;
+    width: 37.5%;
+    display: flex;
+    align-self:flex-end;
+}
+.date-span{
+    font-weight: 700;
+    align-self:flex-end;
+    font-size: 14pt;
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+}
+.emotion-span{
+    font-weight: 600;
+    font-size: 14pt;
+    border-radius: 1rem;
+    min-width: 5vw;
+    max-width: 10vw;
+    min-height: 5vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    align-self:flex-end;
+    justify-content: center;
+    margin-bottom: 1vh;
+    margin-left: 3.65vw;
+    flex-grow: 1;
+    padding: 0 0.3%;
+}
+.post-message{
+    font-size: 14pt;
+    color:rgb(228, 228, 228);
+    text-align: left;
+}
+.emo-negative{
+    background: #e80000;
+}
+.emo-neutral{
+    background: grey;
+    font-size: 12pt;
+}
+.emo-positive{
+    background: rgb(0, 181, 0);
+}

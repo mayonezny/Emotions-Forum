@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?&family=Jaini+Purva&display=swap');   
+    .button {
+        border-radius: 7rem;
+        min-width: 10vw;
+        min-height: 5vh;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 0 1vw;
+    }
+    
+    #nigga{
+        background: #e80000;
+    }
+    #nigga:hover{
+        background: #cf0000;
+    }
+    #neutra{
+        background: grey;
+    }
+    #neutra:hover{
+        background: rgb(116, 116, 116);
+    }
+    #positiva{
+        background: rgb(0, 181, 0);
+    }
+    #positiva:hover{
+        background: rgb(0, 165, 0);
+    }
+  
+  .lightbulb {
+    background-color: gray;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 12px;
+    width: 12px;
+    margin-right: 5px;
+  }
+  
+  .lightbulb.on {
+    background-color: rgb(0, 200, 0);
+  }
+  
+  .text {
+    color: white;
+    font-size: 14px;
+  }
+  

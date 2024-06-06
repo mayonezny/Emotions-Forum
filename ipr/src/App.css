@@ -1,0 +1,162 @@
+body {
+  background-color: rgb(48, 48, 48);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.headlinetext {
+  font-size: 36pt;
+}
+
+.jaini {
+  font-family: "Jaini Purva", system-ui;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#createpost-button {
+  font-size: 24pt;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5vw;
+  background-image: none;
+  border: 4px solid white;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#createpost-button:hover {
+  color: rgb(33 150 243);
+  border-bottom-color: rgb(33 150 243);
+  transition: 0.4s;
+}
+
+.create-post-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 6px -1px rgba(95, 95, 95, 0.4), 0 2px 4px -2px rgba(95, 95, 95, 0.4);
+  color: rgb(255 255 255);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(95, 95, 95);
+  border-radius: 0.5rem;
+  transition: 0.7s;
+  margin-bottom: 1.3vh;
+}
+
+.create-post-button:hover {
+  transition: 0.7s;
+  background: rgb(75, 75, 75);
+}
+
+.CPBactive {
+  background: rgb(75, 75, 75);
+  color: rgb(199, 199, 199);
+}
+.filter-and-update-div{
+  width: 48vw;
+  margin-left: 4vw;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+}
+#update-button{
+  flex-shrink: 0;
+  background-image: url('../public/updatePH3.png');
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  min-width: 3vw;
+  min-height: 6vh;
+  margin-top: 5.5vh;
+  margin-left: -3vw;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#update-button:hover{
+  background-image: url('../public/update-hoverPH.png');
+  transition: 0.3s;
+}
+.no-msg-div {
+  display: flex;
+  margin-top: 3vh;
+  justify-content: center;
+  border-radius: 20px;
+  max-width: 40%;
+  width: 39vw;
+  padding: 0.7%;
+  background-color: #5f5f5f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 14pt;
+}
+
+.footer {
+  background: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  text-align: center;
+}
+
+.no-posts {
+  margin-top: 40vh;
+}
+
+.fade-out {
+  animation: fadeOut 0.7s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
