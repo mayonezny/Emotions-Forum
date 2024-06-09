@@ -1,8 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?&family=Jaini+Purva&display=swap');   
-    .button {
-        border-radius: 7rem;
+@import url('https://fonts.googleapis.com/css2?&family=Jaini+Purva&display=swap');  
+@media (max-width: 450px) {
+    .button{
+        min-width: 10vh;
+        min-height: 5vw;
+        border-radius: 1rem;
+        padding: 2px 3px;
+    }
+    .text {
+        
+        font-size: 9px;
+      }
+      .lightbulb {
+        height: 8px;
+        width: 8px;
+        margin-right: 3px;
+      }
+  }
+  @media (min-width: 1000px) and (max-width: 1600px) {
+    .button{
         min-width: 10vw;
         min-height: 5vh;
+        border-radius: 7rem;
+    }
+    .text {
+        
+        font-size: 14px;
+      }
+      .lightbulb {
+        height: 12px;
+        width: 12px;
+        margin-right: 5px;
+      }
+  } 
+  @media (min-width: 1600px) {
+    .button{
+        min-width: 10vw;
+        min-height: 5vh;
+        border-radius: 7rem;
+    }
+    .text {
+        
+        font-size: 14px;
+      }
+      .lightbulb {
+        height: 12px;
+        width: 12px;
+        margin-right: 5px;
+      }
+  } 
+    .button {
+        
+        
         border: 1px solid black;
         display: flex;
         align-items: center;
@@ -34,9 +82,6 @@
     background-color: gray;
     border-radius: 50%;
     border: 1px solid black;
-    height: 12px;
-    width: 12px;
-    margin-right: 5px;
   }
   
   .lightbulb.on {
@@ -45,6 +90,5 @@
   
   .text {
     color: white;
-    font-size: 14px;
   }
   

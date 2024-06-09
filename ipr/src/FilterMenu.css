@@ -1,12 +1,22 @@
+@media (max-width: 450px) {
+    #filter-outerbox{
+        width: 85vw;
+        margin-top: 2vh;
+    }
+}
+@media (min-width: 450px) {
+    #filter-outerbox{
+        width: 39vw;
+        margin-top: 5vh;
+    }
+}
 #filter-outerbox{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-top: 5vh;
     align-self: center;
     border-radius: 20px;
     /* max-width: 80%; */
-    width: 39vw;
     padding: 0.7%;
     background-color: #5f5f5f;
 }

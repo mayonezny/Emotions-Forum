@@ -1,10 +1,54 @@
+@media (max-width: 450px) {
+    .box-span{
+        font-size: 12pt;
+    }
+    #submit-outerbox{
+        min-width: 85vw;
+        margin-top: 1vh;
+    }
+    #msg-input{
+        min-height: 10vh;
+        max-width: 85%;
+        margin-top: 2vh;
+    }
+    .submit-button {
+        font-size: .6rem;
+        padding: 0.5rem 1rem;
+        width: 90%;
+        align-self: center;
+    }
+  }
+@media (min-width: 450px) {
+    .box-span{
+        font-size: 17pt;
+    }
+    #submit-outerbox{
+        min-height: 47vh;
+        max-width: 50vw;
+        min-width: 40vw;
+        margin-top: 1vh;
+    }
+    #username-input{
+        min-height: 3vh;
+    }
+    #msg-input{
+        padding: 0.33rem 0.5rem;
+        margin-top: 0.66rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        min-height: 20vh;
+        min-width: 90%;
+    }
+    .submit-button {
+        font-size: .75rem;
+        padding: 0.75rem 1.5rem;
+    }
+  }
 textarea{
     resize: none;
 }
 #submit-outerbox{
-    min-height: 47vh;
-    max-width: 50vw;
-    min-width: 40vw;
+    
     align-self: center;
     border-radius: 3.33%;
     display: flex;
@@ -29,7 +73,7 @@ textarea{
 }
 .box-span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 17pt;
+    
     font-weight: 400;
     color: white;
     text-align: center;
@@ -43,19 +87,17 @@ textarea{
     padding: 0.1rem 0.5rem;
   }
 #username-input{
-    min-height: 3vh;
+    
     border-radius: 0.5rem;
     font-weight: 600;
     background-color: #787878;
     color: white;
 }
 #msg-input{
-    padding: 0.33rem 0.5rem;
-    margin-top: 0.66rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    min-width: 90%;
-    min-height: 20vh;
+    
+    
+    
+    
     word-wrap: break-word;
     background-color: #787878;
     color: white;
@@ -72,8 +114,8 @@ textarea{
     color: rgb(255 255 255);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: .75rem;
-    padding: 0.75rem 1.5rem;
+    
+    
     background-color: rgb(33 150 243);
     border-radius: 0.5rem;
     transition: 0.7s;

@@ -41,11 +41,11 @@ const Input: React.FC<InputProps> = ({ onPostSubmit, animateOut }) => {
     <div id='submit-outerbox' className={fadeOut ? 'fade-out' : ''}>
       <div className='usernamediv'>
         <span className='box-span'>Ваше имя:</span>
-        <input className='box-input' id='username-input' maxLength={26} value={username} onChange={(e) => setUsername(e.target.value)}></input>
+        <input className='box-input' id='username-input' minLength={2} maxLength={26} value={username} onChange={(e) => setUsername(e.target.value)}></input>
       </div>
       <div className='messageboxdiv'>
         <span className='box-span'>Ваше сообщение:</span>
-        <textarea className='box-input' id='msg-input' maxLength={10000} value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+        <textarea className='box-input' id='msg-input' minLength={1} maxLength={10000} value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
       </div>
       <button type="button" className="submit-button" onClick={handleSubmit}>Опубликовать</button>
     </div>

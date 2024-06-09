@@ -27,7 +27,7 @@ function App() {
       data.forEach((post, index) => {
         setTimeout(() => {
           setDelayedData(prevData => [...prevData, post]);
-        }, index * 750); // Задержка перед появлением каждого поста
+        }, 0); // Задержка перед появлением каждого поста  index * 750
       });
     } else {
       setDelayedData([]); // Очистка delayedData если нет данных
@@ -61,7 +61,9 @@ function App() {
   console.log(data);
 
   return (
+    
     <div className="App">
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <div className="content">
         <div className='header'>
           <span className='headlinetext-span'>
@@ -73,7 +75,7 @@ function App() {
         <div className='filter-and-update-div'>
         <FilterMenu onFilterApply={handleFilterApply}/>
         <button id='update-button' onClick={handleFeedUpdate}></button>
-        </div>          
+        </div>        
         {delayedData.length > 0 ? (
           delayedData.map((post: any) => (
             <PostsBlock
