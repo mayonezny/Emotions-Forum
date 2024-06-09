@@ -19,6 +19,7 @@ const Input: React.FC<InputProps> = ({ onPostSubmit, animateOut }) => {
   }, [animateOut]);
 
   const handleSubmit = async () => {
+    if((username.length < 2)||(message.length < 2)){ return; }
     const data = {
       username: username,
       text: message,
