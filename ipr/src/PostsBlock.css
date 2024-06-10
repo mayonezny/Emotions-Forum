@@ -20,7 +20,31 @@
     
    }
   }
-@media (min-width: 450px) {
+@media (min-width: 1000px) and (max-width: 1600px) {
+    .postsblock-outerbox{
+        width: 70vw;
+        padding: 1%;
+        min-height: 10vh;
+    }
+   .username-span{
+    font-size: 20pt;
+   }
+   .date-span{
+    font-size: 14pt;
+   }
+   .emotion-span{
+    font-size: 12pt;
+    min-width: 5vw;
+    max-width: 10vw;
+    min-height: 5vh;
+    margin-left: 3.65vw;
+    margin-bottom: 1vh;
+   }
+   .post-message{
+    font-size: 14pt;
+   }
+  }
+@media (min-width: 1600px) {
     .postsblock-outerbox{
         width: 70vw;
         padding: 1%;
